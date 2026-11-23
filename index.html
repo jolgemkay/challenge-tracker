@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f8f3">
+  <title>My AI Challenge Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./" aria-label="My AI Challenge Tracker home">
+        <span class="brand-icon" aria-hidden="true">✳</span>
+        <span>my ai challenge tracker<span class="brand-dot">.</span></span>
+      </a>
+      <span class="header-label"><span class="status-dot"></span> YOUR LEARNING SPACE</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="intro-copy">
+        <p class="eyebrow"><span class="sparkle" aria-hidden="true">✳</span> YOUR 11-WEEK JOURNEY</p>
+        <h1 id="page-title">Big ideas start<br>with <em>small steps.</em></h1>
+        <p class="intro-description">One week, one new skill, a whole lot of possibility. Track your progress and make space for the ideas you pick up along the way.</p>
+      </div>
+      <div class="intro-decoration" aria-hidden="true">
+        <span class="decoration-star">✳</span>
+        <span class="decoration-orbit orbit-one"></span>
+        <span class="decoration-orbit orbit-two"></span>
+        <span class="decoration-dot"></span>
+      </div>
+    </section>
+
+    <section class="progress-card" aria-labelledby="progress-heading">
+      <div class="progress-top">
+        <div>
+          <p class="progress-kicker">A LITTLE PROGRESS GOES A LONG WAY</p>
+          <h2 id="progress-heading">Your progress <span aria-hidden="true">↗</span></h2>
+        </div>
+        <div class="progress-count"><strong id="completed-count">0</strong><span> / 11 weeks</span></div>
+      </div>
+      <div class="progress-track" role="progressbar" aria-label="Challenge progress" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0">
+        <div class="progress-fill"></div>
+      </div>
+      <div class="progress-bottom">
+        <span id="progress-message">Every journey starts somewhere. You’ve got this!</span>
+        <span id="save-status">Saved in this browser <span aria-hidden="true">✓</span></span>
+      </div>
+    </section>
+
+    <section class="roadmap" aria-labelledby="roadmap-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">THE ROAD AHEAD</p>
+          <h2 id="roadmap-heading">Your weekly roadmap<span class="heading-dot">.</span></h2>
+          <p>Check off each week as you go, and leave a note for future you.</p>
+        </div>
+        <span class="weeks-pill">11 WEEKS <span aria-hidden="true">✳</span></span>
+      </div>
+      <div class="week-list" id="week-list"></div>
+      <noscript>Please enable JavaScript to use your challenge tracker.</noscript>
+    </section>
+
+    <footer>
+      <span>MADE FOR CURIOUS MINDS <span aria-hidden="true">✳</span></span>
+      <span>Keep going. You’re doing great.</span>
+    </footer>
+  </main>
+</body>
+</html>
