@@ -1,0 +1,93 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  color: #242f2a;
+  background: #f7f8f3;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+.site-header { border-bottom: 1px solid #e6e9df; background: #fbfcf8; }
+.header-inner, .container { width: min(1080px, calc(100% - 48px)); margin: 0 auto; }
+.header-inner { height: 74px; display: flex; align-items: center; justify-content: space-between; }
+.brand { display: flex; align-items: center; gap: 10px; color: #24352b; font-size: 15px; font-weight: 750; letter-spacing: -.04em; text-decoration: none; }
+.brand-icon { display: grid; place-items: center; width: 31px; height: 31px; border-radius: 9px; color: #f5f8ee; background: #385e46; font-size: 21px; }
+.brand-dot, .heading-dot { color: #86aa71; }
+.header-label, .eyebrow, .progress-kicker, .weeks-pill, footer { font-size: 10px; font-weight: 750; letter-spacing: .14em; }
+.header-label { display: flex; align-items: center; gap: 8px; color: #7a897d; }
+.status-dot { width: 7px; height: 7px; border-radius: 50%; background: #91b37b; }
+
+.intro { min-height: 270px; display: flex; align-items: center; justify-content: space-between; padding: 48px 0 42px; overflow: hidden; }
+.intro-copy { position: relative; z-index: 1; }
+.eyebrow { margin: 0 0 16px; color: #78906f; }
+.sparkle { margin-right: 5px; font-size: 15px; }
+h1, h2, p { margin-top: 0; }
+h1, .section-heading h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.045em; }
+h1 { margin-bottom: 16px; font-size: clamp(42px, 5vw, 61px); line-height: 1.05; }
+h1 em { color: #7b9b6b; font-weight: 400; }
+.intro-description { max-width: 500px; margin-bottom: 0; color: #79837b; font-size: 14px; line-height: 1.75; }
+.intro-decoration { position: relative; width: 230px; height: 185px; flex: 0 0 230px; margin-right: 45px; }
+.decoration-star { position: absolute; top: 39px; left: 67px; color: #a7bf91; font-size: 88px; line-height: 1; }
+.decoration-orbit { position: absolute; inset: 14px 15px; border: 1px solid #dfe8d8; border-radius: 50%; transform: rotate(-24deg); }
+.orbit-two { inset: 35px -3px; transform: rotate(30deg); }
+.decoration-dot { position: absolute; top: 24px; right: 33px; width: 9px; height: 9px; border-radius: 50%; background: #c9d8bd; }
+
+.progress-card { padding: 27px 32px 24px; border-radius: 14px; background: #e8efe2; }
+.progress-top, .progress-bottom { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
+.progress-kicker { margin-bottom: 8px; color: #82967a; font-size: 9px; }
+.progress-top h2 { margin-bottom: 0; font-size: 19px; letter-spacing: -.04em; }
+.progress-top h2 span { color: #7d9e70; font-weight: 400; }
+.progress-count { color: #788a75; font-size: 13px; white-space: nowrap; }
+.progress-count strong { color: #3e6748; font-family: Georgia, "Times New Roman", serif; font-size: 32px; font-weight: 400; }
+.progress-track { height: 8px; margin: 21px 0 12px; overflow: hidden; border-radius: 99px; background: #d3e0ce; }
+.progress-fill { width: 0; height: 100%; border-radius: inherit; background: #739c69; transition: width .25s ease; }
+.progress-bottom { align-items: center; color: #7c9078; font-size: 11px; }
+#save-status { white-space: nowrap; }
+
+.roadmap { padding: 58px 0 18px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 20px; margin-bottom: 25px; }
+.section-heading .eyebrow { margin-bottom: 10px; }
+.section-heading h2 { margin-bottom: 9px; font-size: 35px; }
+.section-heading p:last-child { margin-bottom: 0; color: #8a938c; font-size: 13px; line-height: 1.6; }
+.weeks-pill { padding: 9px 12px; border: 1px solid #e2e8dc; border-radius: 99px; color: #80907d; white-space: nowrap; font-size: 9px; }
+.weeks-pill span { padding-left: 4px; color: #8bab7a; }
+.week-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.week-card { min-width: 0; padding: 22px; border: 1px solid #e7ebe3; border-radius: 12px; background: #fff; transition: border-color .2s, box-shadow .2s; }
+.week-card:hover { border-color: #cbdcc5; box-shadow: 0 5px 20px #334c3210; }
+.week-top { display: flex; align-items: flex-start; gap: 14px; }
+.week-number { display: grid; place-items: center; flex: 0 0 42px; height: 42px; border-radius: 10px; color: #6f9366; background: #eff5eb; font-family: Georgia, "Times New Roman", serif; font-size: 18px; }
+.week-title { flex: 1; min-width: 0; }
+.week-label { margin: 1px 0 5px; color: #a0aca0; font-size: 9px; font-weight: 750; letter-spacing: .13em; }
+.week-title h3 { margin: 0; color: #303e33; font-size: 15px; font-weight: 650; letter-spacing: -.02em; }
+.check-label { display: flex; align-items: center; gap: 7px; color: #9aa79a; font-size: 10px; cursor: pointer; }
+.check-label input { width: 18px; height: 18px; margin: 0; accent-color: #719b68; cursor: pointer; }
+.week-card.is-complete { border-color: #cddfc7; }
+.week-card.is-complete .check-label { color: #6f9366; }
+.notes-label { display: block; margin: 22px 0 8px; color: #a0aca0; font-size: 9px; font-weight: 750; letter-spacing: .13em; }
+textarea { display: block; width: 100%; min-height: 65px; padding: 11px 12px; resize: vertical; border: 1px solid #edf0ea; border-radius: 7px; outline: none; color: #435448; background: #fafbf9; font: inherit; font-size: 12px; line-height: 1.5; }
+textarea::placeholder { color: #b6bfb5; }
+textarea:focus { border-color: #8eaf80; box-shadow: 0 0 0 3px #dcebd6; }
+input:focus-visible, a:focus-visible { outline: 3px solid #92b986; outline-offset: 3px; }
+
+footer { display: flex; justify-content: space-between; gap: 16px; padding: 32px 0 38px; color: #a5b0a3; font-size: 9px; }
+footer span span { color: #8dad7e; }
+footer > span:last-child { font-size: 11px; font-weight: 400; letter-spacing: 0; }
+
+@media (max-width: 650px) {
+  .header-inner, .container { width: min(100% - 32px, 1080px); }
+  .header-inner { height: 64px; }
+  .header-label { font-size: 8px; }
+  .intro { min-height: 0; padding: 45px 0 35px; }
+  .intro-decoration { display: none; }
+  .progress-card { padding: 23px 20px; }
+  .progress-bottom { align-items: flex-start; flex-direction: column; gap: 7px; }
+  .roadmap { padding-top: 45px; }
+  .section-heading { align-items: flex-start; }
+  .section-heading h2 { font-size: 30px; }
+  .weeks-pill { margin-top: 24px; }
+  .week-list { grid-template-columns: 1fr; }
+  footer { flex-direction: column; }
+}
